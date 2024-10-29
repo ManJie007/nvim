@@ -157,3 +157,12 @@ if cmp then
     capabilities = capabilities
   }
 end
+
+-- toggleterm
+local toggleterm = safe_require("toggleterm")
+if toggleterm then
+    toggleterm.setup({
+        open_mapping = [[<leader>t]],
+        direction = 'float',
+    })
+end

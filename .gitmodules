@@ -31,3 +31,6 @@
 [submodule "pack/lsp_cmp/start/nvim-cmp"]
 	path = pack/lsp_cmp/start/nvim-cmp
 	url = git@github.com:hrsh7th/nvim-cmp.git
+[submodule "pack/strengthen/start/toggleterm"]
+	path = pack/strengthen/start/toggleterm
+	url = git@github.com:akinsho/toggleterm.nvim.git
