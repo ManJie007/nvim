@@ -37,3 +37,6 @@
 [submodule "pack/strengthen/start/vim-easymotion"]
 	path = pack/strengthen/start/vim-easymotion
 	url = git@github.com:easymotion/vim-easymotion.git
+[submodule "pack/strengthen/start/vim-visual-multi"]
+	path = pack/strengthen/start/vim-visual-multi
+	url = git@github.com:mg979/vim-visual-multi.git
