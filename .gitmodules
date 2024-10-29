@@ -1,0 +1,3 @@
+[submodule "pack/colorscheme/start/gruvbox"]
+	path = pack/colorscheme/start/gruvbox
+	url = git@github.com:ellisonleao/gruvbox.nvim.git

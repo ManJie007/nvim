@@ -10,3 +10,4 @@ end
 
 safe_require('basic')
 safe_require('keymaps')
+safe_require('plugins')
