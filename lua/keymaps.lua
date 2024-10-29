@@ -44,4 +44,12 @@ if builtin then
     vim.keymap.set('n', '<leader>lgs', builtin.lsp_dynamic_workspace_symbols, { desc = 'Telescope lsp_dynamic_workspace_symbols' })
 end
 
+-- 在终端模式下将 <Esc> 映射为 <C-\><C-n>，这样可以直接返回普通模式
+vim.api.nvim_create_autocmd("TermEnter", {
+  pattern = "*",
+  callback = function()
+    vim.api.nvim_buf_set_keymap(0, "t", "<Esc>", [[<C-\><C-n>]], { noremap = true, silent = true })
+  end,
+})
+
 return keymaps
