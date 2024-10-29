@@ -1,3 +1,5 @@
+local keymaps = {}
+
 -- custom
 -- leader 
 vim.g.mapleader = ','
@@ -24,3 +26,9 @@ vim.api.nvim_set_keymap('n', '<C-j>', '<C-W>j', { noremap = true, silent = true 
 vim.api.nvim_set_keymap('n', '<C-k>', '<C-W>k', { noremap = true, silent = true })
 vim.api.nvim_set_keymap('n', '<C-h>', '<C-W>h', { noremap = true, silent = true })
 vim.api.nvim_set_keymap('n', '<C-l>', '<C-W>l', { noremap = true, silent = true })
+
+
+-- 将 <leader>n 映射到 :NvimTreeToggle
+vim.api.nvim_set_keymap('n', '<leader>n', ':NvimTreeToggle<CR>', { noremap = true, silent = true })
+
+return keymaps
