@@ -34,3 +34,6 @@
 [submodule "pack/strengthen/start/toggleterm"]
 	path = pack/strengthen/start/toggleterm
 	url = git@github.com:akinsho/toggleterm.nvim.git
+[submodule "pack/strengthen/start/vim-easymotion"]
+	path = pack/strengthen/start/vim-easymotion
+	url = git@github.com:easymotion/vim-easymotion.git

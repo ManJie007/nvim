@@ -39,6 +39,7 @@ if builtin then
     vim.keymap.set('n', '<leader>fb', builtin.buffers, { desc = 'Telescope buffers' })
     vim.keymap.set('n', '<leader>ft', builtin.tags, { desc = 'Telescope tags' })
     vim.keymap.set('n', '<leader>fh', builtin.help_tags, { desc = 'Telescope help tags' })
+    vim.keymap.set('n', '<leader>lt', builtin.treesitter, { desc = 'Telescope treesitter' })
     vim.keymap.set('n', '<leader>lr', builtin.lsp_references, { desc = 'Telescope lsp_references' })
     vim.keymap.set('n', '<leader>ls', builtin.lsp_document_symbols, { desc = 'Telescope lsp_document_symbols' })
     vim.keymap.set('n', '<leader>lgs', builtin.lsp_dynamic_workspace_symbols, { desc = 'Telescope lsp_dynamic_workspace_symbols' })
@@ -51,5 +52,18 @@ vim.api.nvim_create_autocmd("TermEnter", {
     vim.api.nvim_buf_set_keymap(0, "t", "<Esc>", [[<C-\><C-n>]], { noremap = true, silent = true })
   end,
 })
+
+
+-- easy-motion
+-- 禁用 EasyMotion 的默认映射
+vim.g.EasyMotion_do_mapping = 0
+-- 设置跳转到任意位置的快捷键映射
+vim.api.nvim_set_keymap("n", "s", "<Plug>(easymotion-overwin-f2)", {})
+-- 开启智能大小写功能
+vim.g.EasyMotion_smartcase = 1
+-- JK 行跳转映射
+vim.api.nvim_set_keymap("n", "<Leader>j", "<Plug>(easymotion-j)", {})
+vim.api.nvim_set_keymap("n", "<Leader>k", "<Plug>(easymotion-k)", {})
+
 
 return keymaps
