@@ -1,0 +1,2 @@
+1.在keymaps中修改当插件存在时进行映射
+2.nvim-lspconfig中on_attach的映射由keymaps文件中传入
