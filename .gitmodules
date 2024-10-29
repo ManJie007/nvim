@@ -16,3 +16,18 @@
 [submodule "pack/lsp_cmp/start/nvim-lspconfig"]
 	path = pack/lsp_cmp/start/nvim-lspconfig
 	url = git@github.com:neovim/nvim-lspconfig.git
+[submodule "pack/lsp_cmp/start/cmp-nvim-lsp"]
+	path = pack/lsp_cmp/start/cmp-nvim-lsp
+	url = git@github.com:hrsh7th/cmp-nvim-lsp.git
+[submodule "pack/lsp_cmp/start/cmp-buffer"]
+	path = pack/lsp_cmp/start/cmp-buffer
+	url = git@github.com:hrsh7th/cmp-buffer.git
+[submodule "pack/lsp_cmp/start/cmp-path"]
+	path = pack/lsp_cmp/start/cmp-path
+	url = git@github.com:hrsh7th/cmp-path.git
+[submodule "pack/lsp_cmp/start/cmp-cmdline"]
+	path = pack/lsp_cmp/start/cmp-cmdline
+	url = git@github.com:hrsh7th/cmp-cmdline.git
+[submodule "pack/lsp_cmp/start/nvim-cmp"]
+	path = pack/lsp_cmp/start/nvim-cmp
+	url = git@github.com:hrsh7th/nvim-cmp.git
