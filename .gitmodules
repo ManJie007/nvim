@@ -10,3 +10,6 @@
 [submodule "pack/search/start/plenary"]
 	path = pack/search/start/plenary
 	url = git@github.com:nvim-lua/plenary.nvim.git
+[submodule "pack/lsp_cmp/start/nvim-treesitter"]
+	path = pack/lsp_cmp/start/nvim-treesitter
+	url = git@github.com:nvim-treesitter/nvim-treesitter.git
